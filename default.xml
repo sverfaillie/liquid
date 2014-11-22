@@ -297,7 +297,6 @@
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="cm" revision="cm-11.0" />
   <project path="hardware/cm" name="android_hardware_cm" remote="cm" revision="cm-11.0" />
   <project path="hardware/invensense" name="android_hardware_invensense" remote="cm" revision="cm-11.0" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="ls" revision="kitkat" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ls" revision="kitkat" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="ls" revision="kitkat" />
@@ -429,7 +428,7 @@
   <!-- Use devicetree forked from Evervolv projects -->
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/ls-kitkat" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/ls-kitkat" /> -->
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="refs/heads/smart-patch" /> 
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="Utopian" /> 
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" />
   
   <!--  Use legacy projects maintained by Evervolv  -->
