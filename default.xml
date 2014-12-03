@@ -34,7 +34,7 @@
   <default revision="refs/tags/android-4.4.4_r2"
            remote="aosp" />
 
-  <project path="build" name="android_build" remote="ls" revision="kitkat">
+  <project path="build" name="android_build" remote="spz" revision="ls-kitkat">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -265,7 +265,6 @@
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="kitkat" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="ls" revision="kitkat3" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" remote="ln" revision="linaro_android_4.4.4" />
@@ -353,6 +352,7 @@
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="sr" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="sr" revision="kk4.4" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="sr" revision="kk4.4" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
@@ -374,17 +374,7 @@
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" />
   <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" />
   <project path="prebuilts/eclipse-build-deps-sources" name="platform/prebuilts/eclipse-build-deps-sources" groups="notdefault,eclipse" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-LK" name="UBERUTILS/linaro-arm-eabi-4.8" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7-sm" name="UBERUTILS/arm-linux-androideabi-4.7" remote="gh" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="UBERUTILS/arm-linux-androideabi-4.8" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="UBERUTILS/arm-linux-androideabi-4.9" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.10-sm" name="UBERUTILS/arm-linux-androideabi-4.10" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7-linaro" name="UBERUTILS/LINARO-OTTER" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7-sm" name="UBERUTILS/arm-eabi-4.7" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="UBERUTILS/arm-eabi-4.8" remote="gh" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="UBERUTILS/arm-eabi-4.9" remote="gh" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.10-sm" name="UBERUTILS/arm-eabi-4.10" remote="gh" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux" />
@@ -426,27 +416,26 @@
   </project>
 
   <!-- Use devicetree forked from Evervolv projects -->
-  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="refs/heads/ls-kitkat" />
-  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="refs/heads/ls-kitkat" /> -->
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="Utopian" /> 
-  <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="refs/heads/kitkat" />
+  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="ls-kitkat" />
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="ls-kitkat" /> -->
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="utopian" /> 
+  <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="kitkat" />
   
   <!--  Use legacy projects maintained by Evervolv  -->
-  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="refs/heads/kitkat" />
-  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="refs/heads/kitkat" />
-  <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="refs/heads/kitkat" />
+  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="kitkat" />
 
   <!-- Use forked projects with required changes for htc bravo -->
-  <!--<project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />-->
-  <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="liquid" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="refs/heads/ls-kitkat" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="refs/heads/ls-kitkat" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="spz" revision="ls-kitkat" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="ls-kitkat" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="ls-kitkat" />
   
     <!-- Use htc bravo compatible apps from Evervolv -->
-  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="gh" revision="refs/heads/kitkat" />  
+  <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="gh" revision="kitkat" />  
 
   <!-- Required for running A2SD scripts -->
-  <project path="external/bash" name="android_external_bash" remote="cm" revision="refs/heads/cm-11.0" />
-  <project path="external/libncurses" name="android_external_libncurses" remote="cm" revision="refs/heads/cm-11.0" />
+  <project path="external/bash" name="android_external_bash" remote="cm" revision="cm-11.0" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="cm" revision="cm-11.0" />
 
 </manifest>
