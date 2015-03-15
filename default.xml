@@ -352,7 +352,6 @@
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="sr" revision="kk4.4" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="sr" revision="kk4.4" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="sr" revision="kk4.4" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
@@ -431,8 +430,11 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="spz" revision="ls-kitkat" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spz" revision="ls-kitkat" />
   
-    <!-- Use htc bravo compatible apps from Evervolv -->
+  <!-- Use htc bravo compatible apps from Evervolv -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="gh" revision="kitkat" />  
+
+  <!-- Torch -->
+  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="spz" revision="ls-kitkat" />
 
   <!-- Required for running A2SD scripts -->
   <project path="external/bash" name="android_external_bash" remote="cm" revision="cm-11.0" />
