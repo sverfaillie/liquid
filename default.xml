@@ -120,7 +120,6 @@
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="cm" revision="cm-11.0" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" revision="cm-11.0" />
-  <project path="external/flac" name="android_external_flac" remote="cm" revision="cm-11.0" />
   <project path="external/freetype" name="platform/external/freetype" remote="ln" revision="linaro_android_4.4.4" />
   <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="cm" revision="cm-11.0" />
   <project path="external/fuse" name="android_external_fuse" remote="cm" revision="cm-11.0" />
@@ -231,7 +230,6 @@
   <project path="external/sepolicy" name="android_external_sepolicy" remote="cm" revision="cm-11.0" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
-  <project path="external/skia" name="android_external_skia" remote="cm" revision="cm-11.0" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" remote="ln" revision="linaro_android_4.4.4" />
@@ -264,7 +262,6 @@
   <project path="external/yaffs2" name="android_external_yaffs2" remote="cm" revision="cm-11.0" />
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="kitkat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" remote="ln" revision="linaro_android_4.4.4" />
@@ -389,12 +386,10 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="b52073d9cb1b044f4701bfc32e60b927323740fb" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="android_sdk" remote="cm" revision="cm-11.0" />
-  <project path="system/core" name="android_system_core" remote="ls" revision="kitkat" />
   <project path="system/extras" name="android_system_extras" remote="ls" revision="kitkat" />
   <project path="system/media" name="android_system_media" remote="ls" revision="kitkat" />
   <project path="system/netd" name="android_system_netd" remote="cm" revision="cm-11.0" />
   <project path="system/qcom" name="android_system_qcom" remote="ls" revision="kitkat" />
-  <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="android_system_vold" remote="ls" revision="kitkat" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
@@ -417,7 +412,14 @@
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="ls-kitkat" /> -->
   <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="utopian" /> 
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="kitkat" />
-  
+
+  <!--  Use forked projects with Stagefright 2.0 patches -->
+  <project path="system/security" name="android_system_security" remote="spz" revision="cm-11.0" />
+  <project path="external/flac" name="android_external_flac" remote="spz" revision="cm-11.0" />
+  <project path="external/skia" name="android_external_skia" remote="spz" revision="cm-11.0" />
+  <project path="system/core" name="android_system_core" remote="spz" revision="ls-kitkat" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="ls-kitkat" />
+
   <!--  Use legacy projects maintained by Evervolv  -->
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="kitkat" />
