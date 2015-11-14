@@ -250,7 +250,6 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="cm" revision="cm-11.0" />
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" />
-  <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" remote="ln" revision="linaro_android_4.4.4" />
   <project path="external/valgrind" name="platform/external/valgrind" />
   <project path="external/webp" name="android_external_webp" remote="ls" revision="kitkat" />
@@ -407,9 +406,9 @@
   </project>
 
   <!-- Use devicetree forked from Evervolv projects -->
-  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="ls-kitkat-30" />
+  <project path="device/htc/bravo" name="android_device_htc_bravo" remote="spz" revision="ls-kitkat" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="spz" revision="ls-kitkat-30" />
-  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k_3.0" remote="spz" revision="kitkat-ev" /> 
+  <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="spz" revision="kitkat-ls" /> 
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="kitkat" />
 
   <!--  Use forked projects with Stagefright 2.0 patches -->
@@ -418,6 +417,9 @@
   <project path="external/skia" name="android_external_skia" remote="spz" revision="cm-11.0" />
   <project path="system/core" name="android_system_core" remote="spz" revision="ls-kitkat" />
   <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="ls-kitkat" />
+
+  <!--  Use forked projects with security patches by Google -->
+  <project path="external/tremolo" name="android_external_tremolo" remote="spz" revision="master" />
 
   <!--  Use legacy projects maintained by Evervolv  -->
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
