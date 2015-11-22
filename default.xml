@@ -417,6 +417,7 @@
   <project path="external/skia" name="android_external_skia" remote="spz" revision="cm-11.0" />
   <project path="system/core" name="android_system_core" remote="spz" revision="ls-kitkat" />
   <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="ls-kitkat" />
+  <project path="libcore" name="android_libcore" remote="spz" revision="ls-kitkat" />
 
   <!--  Use forked projects with security patches by Google -->
   <project path="external/tremolo" name="android_external_tremolo" remote="spz" revision="master" />
